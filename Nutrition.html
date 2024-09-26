@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Nutrition Calculator</title>
+    <link rel="stylesheet" href="tools_ele.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Recipe Nutrition Calculator</h2>
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" placeholder="Enter the name of your recipe" id="recipeName">
+        <label for="servings">Number of Servings:</label>
+        <input type="number" placeholder="Enter the number of servings" id="servings">
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <div id="ingredientInputs">
+                <!-- Ingredient inputs will be dynamically added here -->
+            </div>
+            <button onclick="addIngredient()">Add Ingredient</button>
+        </div>
+        <button onclick="calculateNutrition()">Calculate Nutrition</button>
+        <div id="result"></div>
+    </div>
+    <script src="nut"></script>
+</body>
+</html>

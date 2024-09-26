@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Calorie Goal Calculator</title>
+    <link rel="stylesheet" href="tools_ele.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Weight Loss Calorie Goal Calculator</h2>
+        <label for="currentWeight">Current Weight (kg):</label>
+        <input type="number" placeholder="Enter your current weight" id="currentWeight">
+        <label for="targetWeight">Target Weight (kg):</label>
+        <input type="number" placeholder="Enter your target weight" id="targetWeight">
+        <label for="weeks">Number of Weeks:</label>
+        <input type="number" placeholder="Enter the target weight" id="weeks">
+        <button onclick="calculateCalorieGoal()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="loss.js"></script>
+</body>
+</html>
